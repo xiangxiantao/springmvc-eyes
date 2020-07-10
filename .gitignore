@@ -1,0 +1,3 @@
+# Project exclude paths
+/mvc-dispatch/target/
+/mvc-start/target/
