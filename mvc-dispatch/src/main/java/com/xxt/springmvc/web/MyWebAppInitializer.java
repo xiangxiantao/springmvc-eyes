@@ -1,7 +1,6 @@
 package com.xxt.springmvc.web;
 
 import com.xxt.springmvc.config.AppConfig;
-import com.xxt.springmvc.config.AsynReqConfig;
 import com.xxt.springmvc.config.RootConfig;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -14,7 +13,7 @@ public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServl
     @Override
     protected Class<?>[] getRootConfigClasses() {
         System.out.println("注册RootConfig到父容器");
-        return new Class[]{RootConfig.class, AsynReqConfig.class};
+        return new Class[]{RootConfig.class};
     }
 
     @Override

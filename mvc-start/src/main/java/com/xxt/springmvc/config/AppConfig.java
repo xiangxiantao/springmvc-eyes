@@ -12,32 +12,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 @Configuration
 @ComponentScan(basePackages = {"com.xxt.springmvc.controller"})
-@EnableWebMvc
-/**
- * extends WebMvcConfigurationSupport的效果：自定义的配置不生效，仍然使用@EnableWebMvc的默认配置
- */
-public class AppConfig extends WebMvcConfigurationSupport {
+public class AppConfig  {
 
-
-    @Override
-    public void configureAsyncSupport(final AsyncSupportConfigurer configurer) {
-        configurer.setDefaultTimeout(60 * 1000L);
-        configurer.registerCallableInterceptors(timeoutInterceptor());
-        configurer.setTaskExecutor(threadPoolTaskExecutor());
-    }
-
-    @Bean
-    public TimeoutCallableProcessingInterceptor timeoutInterceptor() {
-        return new TimeoutCallableProcessingInterceptor();
-    }
-
-    @Bean
-    public ThreadPoolTaskExecutor threadPoolTaskExecutor() {
-        ThreadPoolTaskExecutor t = new ThreadPoolTaskExecutor();
-        t.setCorePoolSize(10);
-        t.setMaxPoolSize(100);
-        t.setQueueCapacity(20);
-        t.setThreadNamePrefix("XXT-Thread-");
-        return t;
-    }
 }

@@ -3,7 +3,6 @@ package com.xxt.springmvc.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
 
 import java.util.HashMap;
 import java.util.Map;

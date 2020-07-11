@@ -2,6 +2,7 @@ package com.xxt.springmvc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,7 +17,7 @@ public class AppController {
     Map<String,String> rootMap;
 
     @ResponseBody
-    @GetMapping("/app/h")
+    @GetMapping("/h")
     public String app() {
         System.out.println("hello");
         return rootMap.get("root");
@@ -26,19 +27,19 @@ public class AppController {
      * 重定向，url改变
      * @return
      */
-    @GetMapping("/app/re")
+    @GetMapping("/re")
     public String re() {
         System.out.println("re");
-        return "redirect:/app/h";
+        return "redirect:/h";
     }
 
     /**
      * 转发，url不变
      * @return
      */
-    @GetMapping("/app/fo")
+    @GetMapping("/fo")
     public String fo() {
         System.out.println("fo");
-        return "forward:/app/h";
+        return "forward:/h";
     }
 }
