@@ -11,6 +11,7 @@
         <module>mvc-start</module>
         <module>mvc-dispatch</module>
         <module>mvc-context-hierarchy</module>
+        <module>mvc-data</module>
     </modules>
     <packaging>pom</packaging>
 
