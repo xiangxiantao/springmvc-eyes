@@ -1,4 +1,11 @@
 package com.xxt.springmvc.componet;
 
-public class MySimpleConverter {
+import org.springframework.core.convert.converter.Converter;
+
+public class MySimpleConverter implements Converter<String,String> {
+    @Override
+    public String convert(String s) {
+        System.out.println("I'm ok");
+        return null;
+    }
 }
