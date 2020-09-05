@@ -11,6 +11,7 @@ public class MyStringToLocalDateConverter implements Converter<String , LocalDat
 
     @Override
     public LocalDate convert(String s) {
+        System.out.println("converting localdate...");
         return LocalDate.parse(s,dateFormatter);
     }
 }

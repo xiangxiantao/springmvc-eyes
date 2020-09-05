@@ -13,6 +13,7 @@ public class MyDateFormatter implements Formatter<LocalDate> {
 
     @Override
     public LocalDate parse(String s, Locale locale) throws ParseException {
+        System.out.println("locadate formatter parsing...");
         LocalDate localDate =LocalDate.parse(s,dateFormatter);
         return localDate;
     }

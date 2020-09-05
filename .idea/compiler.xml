@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mvc-data" />
+        <module name="mvc-context-hierarchy" />
+        <module name="mvc-download" />
+        <module name="mvc-dispatch" />
+        <module name="mvc-start" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

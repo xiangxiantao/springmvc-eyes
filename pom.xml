@@ -12,6 +12,7 @@
         <module>mvc-dispatch</module>
         <module>mvc-context-hierarchy</module>
         <module>mvc-data</module>
+        <module>mvc-download</module>
     </modules>
     <packaging>pom</packaging>
 
